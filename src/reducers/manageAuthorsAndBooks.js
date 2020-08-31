@@ -10,6 +10,7 @@ export default function bookApp(
     case "ADD_BOOK":
       return {
         ...state,
+        authors: [...state.authors],
         books: [...state.books, action.book]
       };
 
