@@ -1,3 +1,6 @@
+import { createStore } from "redux";
+import rootReducer from "./reducers/manageAuthorsAndBooks";
+
 export const addAuthor = author => {
   return {
     type: 'ADD_AUTHOR',
